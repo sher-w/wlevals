@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Playable Maze</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="maze-page">
+  <audio id="bgMusic" style="display:none" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <div class="container">
+    <h1>Sher's Valentine's Game</h1>
+    <p class="hint">Use arrow keys or WASD to move. Reach Aleen to win!</p>
+    <canvas id="maze" width="900" height="900" aria-label="Maze game"></canvas>
+    <div id="instructions">
+      <p>Progress: <span id="attempts">1</span> attempts</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

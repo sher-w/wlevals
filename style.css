@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* Background image for the game */
+body.maze-page {
+  background-image: url('bg.gif');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+.hint {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+#maze {
+  border: 3px solid #333;
+  background: white;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  cursor: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#instructions {
+  margin-top: 20px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .hint {
+    font-size: 0.9em;
+  }
+}
